@@ -183,6 +183,8 @@ namespace precise {
         nan(detail::unit_data(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
             constants::invalid_conversion);
     // SI prefixes as units
+	constexpr precise_unit deci(1e-1, one);
+	constexpr precise_unit centi(1e-2, one);
     constexpr precise_unit milli(1e-3, one);
     constexpr precise_unit micro(1e-6, one);
     constexpr precise_unit nano(1e-9, one);
@@ -1524,6 +1526,8 @@ constexpr inline bool is_valid(const unit& utest)
 }
 
 // SI prefixes as units
+constexpr unit deci(0.1, one);
+constexpr unit centi(1e-2, one);
 constexpr unit milli(1e-3, one);
 constexpr unit micro(1e-6, one);
 constexpr unit nano(1e-9, one);
