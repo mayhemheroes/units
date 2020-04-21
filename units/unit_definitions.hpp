@@ -169,7 +169,10 @@ namespace precise {
     /// Define some unitless numbers
     constexpr precise_unit one;
     constexpr precise_unit hundred = precise_unit(100.0, one);
+    constexpr precise_unit thousand = precise_unit(100.0, one);
     constexpr precise_unit ten = precise_unit(10.0, one);
+    constexpr precise_unit half = precise_unit(0.5, one);
+    constexpr precise_unit quarter = precise_unit(0.25, one);
     constexpr precise_unit percent(0.01, one);
     constexpr precise_unit ratio = one;
 
@@ -194,6 +197,7 @@ namespace precise {
     constexpr precise_unit zepto(1e-21, one);
     constexpr precise_unit yocto(1e-24, one);
 
+    constexpr precise_unit deca(10, one);
     constexpr precise_unit hecto(1e2, one);
     constexpr precise_unit kilo(1e3, one);
     constexpr precise_unit mega(1e6, one);
