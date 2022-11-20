@@ -1,0 +1,5 @@
+project: units
+target: units
+
+cmds:
+  - cmd: /fuzz_string
